@@ -20,7 +20,6 @@ const NavBar = () => {
                   src='https://i.ibb.co/cFdGJLH/Big-Boy-Logo-2022-svg.png'
                   style={{
                      width: '150px',
-                     height:'',
                      
                   }}
                />
