@@ -1,17 +1,13 @@
 import { useEffect, useState } from 'react';
 import { axiosInstance } from '../Utilities/axiosInstance';
 
-const useMeals = (category) => {
+const useMeals = () => {
    const [meals, setMeals] = useState([]);
    const [loading, setLoading] = useState(true);
    const [error, setError] = useState('');
 
    useEffect(() => {
       let url = 'meals';
-
-      if (category) {
-         url = `${url}/${category}`;
-      }
 
       const fetchMeals = async () => {
          setLoading(true);
@@ -29,7 +25,7 @@ const useMeals = (category) => {
       };
 
       fetchMeals();
-   }, [category]);
+   }, []);
 
    return {
       meals,
