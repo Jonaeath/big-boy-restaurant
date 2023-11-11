@@ -31,8 +31,7 @@ const CustomTabs = styled(Tabs)(({ theme }) => ({
    },
 }));
 
-export default function TabButtons() {
-    const [value, setValue] = React.useState(0);
+export default function TabButtons({value,setValue}) {
   
     const handleChange = (event, newValue) => {
       setValue(newValue);

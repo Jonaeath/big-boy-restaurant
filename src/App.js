@@ -10,7 +10,6 @@ function App() {
       <ThemeProvider theme ={theme}>
       <CssBaseline/>
       <RouterProvider router ={router}/>
-      <h1>Red sona</h1>
       </ThemeProvider>
     </div>
   );

@@ -4,8 +4,7 @@ import TabButtons from '../Custom/TabButtons';
 
 
 const FoodCategory = () => {
-
-
+    const [value, setValue] = React.useState(0);
 
    return (
       <Box>
@@ -16,7 +15,7 @@ const FoodCategory = () => {
                   mx: 'auto',
                }}
             >
-               <TabButtons/>
+               <TabButtons  value={value} setValue={setValue}/>
             </Box>
         
          </Container>
